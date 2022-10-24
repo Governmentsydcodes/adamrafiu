@@ -1,0 +1,1911 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+      <title>Government Syd Codes</title>
+      <!-- ==== css files ==== -->
+      <style>
+
+
+:root {
+      --bg-black-900: #f2f2fc;
+      --bg-black-100: #fdf9ff;
+      --bg-black-50: #e8dfec;
+      --text-black-900: #302e4d;
+      --text-black-700: #504e70;
+}
+body.dark{
+      --bg-black-900: #151515;
+      --bg-black-100: #222222;
+      --bg-black-50: #393939;
+      --text-black-900: #fff;
+      --text-black-50: #ffff;
+      --text-black-700: #fff;
+}
+
+body {
+      line-height: 1.5;
+      font-size: 16px;
+}
+
+* {
+      padding: 0;
+      margin: 0;
+      font-family: 'poppins', sans-serif;
+      outline: none;
+      text-decoration: none;
+      box-sizing: border-box;
+}
+
+ul {
+      list-style: none;
+}
+
+::before,
+::after {
+      box-sizing: border-box;
+}
+
+.section {
+      padding: 0 30px;
+      background: var(--bg-black-900);
+      min-height: 100vh;
+      display: block;
+      overflow: hidden;
+      opacity: 1;
+}
+.main-content {
+      padding-left: 270px;
+}
+
+.hidden {
+      display: none !important;
+}
+
+.padd-15 {
+      padding-left: 15px;
+      padding-right: 15px;
+}
+
+.container {
+      max-width: 1100px;
+      width: 100%;
+      margin: auto;
+
+}
+
+.section .container {
+      padding-top: 60px;
+      padding-bottom: 70px;
+}
+
+.section-title {
+      flex: 0 0 100%;
+      max-width: 100%;
+      margin-bottom: 60px;
+}
+
+.section-title h2 {
+      font-size: 40px;
+      color: var(--text-black-900);
+      font-weight: 700;
+      position: relative;
+}
+
+.section-title h2::before {
+      content: '';
+      height: 4px;
+      width: 50px;
+      background: var(--skin-color);
+      top: 100%;
+      position: absolute;
+      left: 0;
+}
+
+.section-title h2::after {
+      content: '';
+      height: 4px;
+      width: 25px;
+      position: absolute;
+      margin-top: 8px;
+      background: var(--skin-color);
+      top: 100%;
+      left: 0;
+}
+
+.row {
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: -15px;
+      margin-right: -15px;
+      position: relative;
+}
+
+.btn {
+      font-size: 16px;
+      font-weight: 500;
+      padding: 12px 35px;
+      color: white;
+      display: inline-block;
+      border: none;
+      white-space: nowrap;
+      border-radius: 40px;
+      background: var(--skin-color);
+      transition: all 0.3s ease;
+}
+
+.btn:hover {
+      transform: scale(1.05);
+}
+
+.shadow-dark {
+      box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+}
+
+/* aside*/
+.aside {
+      width: 270px;
+      position: fixed;
+      background: var(--bg-black-100);
+      left: 0;
+      top: 0;
+      border-right: 1px solid var(--bg-black-50);
+      display: flex;
+      height: 100%;
+      justify-content: center;
+      align-items: center;
+      padding: 30px;
+      z-index: 10;
+}
+
+.aside .logo {
+      height: 220px;
+      width: 220px;
+      position: absolute;
+      top: 50px;
+}
+
+.aside .logo img {
+      font-size: 30px;
+      padding: 15px 20px;
+      position: relative;
+      height: 100px;
+      width: 100px;
+}
+
+.aside .logo p {
+      transform: translate(2px, -110px);
+      font-size: 30px;
+      padding: 15px 20px;
+      position: relative;
+      height: 100px;
+      width: 100px;
+}
+
+.aside .logo p::before {
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      border-bottom: 5px solid var(--skin-color);
+      border-left: 5px solid var(--skin-color);
+      bottom: 0;
+      left: 0;
+}
+
+.aside .logo p::after {
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      border-top: 5px solid var(--skin-color);
+      border-right: 5px solid var(--skin-color);
+      top: 0;
+      right: 0;
+}
+
+.aside .nav-toggler {
+      height: 40px;
+      width: 45px;
+      border: 1px solid var(--bg-black-50);
+      cursor: pointer;
+      position: fixed;
+      top: 20px;
+      border-radius: 5px;
+      background: var(--bg-black-100);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      transform: translateX(100%);
+}
+
+.aside .nav-toggler div{
+      height: 2px ;
+      width: 25px;
+      background: var(--skin-color);
+      margin: 5px;
+      text-align: center;
+}
+.toggle .line1{
+      transform: rotate(45deg) translate(-5px, 12px);
+}
+.toggle .line2{
+      opacity: 0;
+}
+.toggle .line3{
+      transform: rotate(-45deg) translate(-5px, -12px);
+}
+.aside .nav {
+      margin-top: 50px;
+}
+
+.aside .nav li {
+      margin-top: 20px;
+      display: flex;
+}
+
+.aside .nav li a {
+      font-size: 16px;
+      font-weight: 600;
+      display: block;
+      border-bottom: 1px solid var(--bg-black-50);
+      padding: 5px 15px;
+      color: var(--text-black-700);
+}
+
+.aside .nav li a.active {
+      color: var(--skin-color);
+}
+
+.aside .nav li a i {
+      margin-right: 15px;
+}
+.aside .aside-icons-social{
+      position: absolute;
+      width: 90%;
+      transform: translate(0px, 350px);
+      bottom: 900;
+}
+.aside .aside-icons-social .social li{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+}
+.aside .aside-icons-social .social li a{
+      color: var(--skin-color);
+}
+.aside .aside-icons-social .social li a i{
+      transform: scale(2.1);
+}
+
+/* home */
+.home {
+      min-height: 100vh;
+      display: flex;
+      color: var(--text-black-900);
+}
+
+.home .home-info {
+      flex: 0 0 60%;
+      max-width: 60%;
+}
+
+h3.hello {
+      font-size: 28px;
+      margin: 15px 0;
+      color: var(--text-black-900);
+}
+
+h3.hello span {
+      font-size: 28px;
+      color: var(--skin-color);
+      font-weight: 700;
+      font-family: 'clicker script', cursive;
+}
+
+h3.ny-profession {
+      font-size: 30px;
+      margin: 15px 0;
+}
+
+.typing {
+      font-size: 30px;
+      color: var(--skin-color);
+}
+
+.home-info p {
+      margin-bottom: 70px;
+      font-size: 20px;
+      color: var(--text-black-700);
+}
+
+.home .home-image::before {
+      content: '';
+      position: absolute;
+      height: 80px;
+      width: 80px;
+      background-origin: -40px;
+      left: 20px;
+      top: -40px;
+      border-top: 10px solid var(--skin-color);
+      border-left: 10px solid var(--skin-color);
+}
+
+.home .home-image::after {
+      content: '';
+      position: absolute;
+      height: 80px;
+      width: 80px;
+      background-origin: -40px;
+      right: 20px;
+      bottom: -40px;
+      border-bottom: 10px solid var(--skin-color);
+      border-right: 10px solid var(--skin-color);
+}
+
+.home .home-image {
+      flex: 0 0 40%;
+      max-width: 40%;
+      text-align: center;
+      position: relative;
+}
+
+.home .home-image img {
+      margin: auto;
+      border-radius: 5px;
+      height: 400px;
+}
+
+/* about */
+.about .about-content {
+      flex: 0 0 100%;
+      max-width: 100%;
+}
+
+.about .about-content .about-text {
+      flex: 0 0 100%;
+      max-width: 100%;
+}
+
+.about .about-content .about-text h3 {
+      font-size: 24px;
+      margin-bottom: 15px;
+      font-weight: 700;
+      color: var(--text-black-900);
+}
+
+.about .about-content .about-text h3 span {
+      color: var(--skin-color);
+}
+
+.about .about-content .about-text p {
+      color: var(--text-black-700);
+      font-size: 16px;
+      line-height: 25px;
+      font-weight: 600;
+
+}
+
+.about .about-content .personal-info {
+      flex: 0 0 100%;
+      max-width: 60%;
+      margin-top: 40px;
+}
+
+.about .about-content .personal-info .info-item {
+      flex: 0 0 50%;
+      max-width: 50%;
+}
+
+.about .about-content .personal-info .info-item p {
+      font-weight: 600;
+      padding: 10px 0;
+      font-size: 16px;
+      color: var(--text-black-900);
+      border-bottom: 1px solid var(--bg-black-50);
+}
+
+.about .about-content .personal-info .info-item p span {
+      color: var(--text-black-700);
+      font-weight: 500;
+      margin-left: 1px;
+      display: inline-block;
+}
+
+.about .about-content .personal-info .buttons {
+      margin-top: 25px;
+}
+
+.about .about-content .personal-info .buttons .btn {
+      margin-right: 15px;
+      margin-top: 10px;
+}
+
+.about .about-content .skills {
+      margin-top: 40px;
+      flex: 0 0 40%;
+      max-width: 40%;
+
+}
+
+.about .about-content .skills .skill-item {
+      flex: 0 0 100%;
+      max-width: 100%;
+}
+
+.about .about-content .skills .skill-item h5 {
+      line-height: 40px;
+      font-size: 16px;
+      font-weight: 600;
+      text-transform: capitalize;
+      color: var(--text-black-700);
+}
+
+.about .about-content .skills .skill-item .progress {
+      background: var(--bg-black-50);
+      height: 7px;
+      border-radius: 4px;
+      width: 100%;
+      position: relative;
+}
+
+.about .about-content .skills .skill-item {
+      margin-bottom: 30px;
+}
+
+.about .about-content .skills .skill-item .progress .progress-in {
+      left: 0;
+      position: absolute;
+      top: 0;
+      height: 100%;
+      border-radius: 4px;
+      background-color: var(--skin-color);
+}
+
+.about .about-content .skills .skill-item .skill-percent {
+      right: 0;
+      position: absolute;
+      top: -40PX;
+      height: 100%;
+      font-weight: 400;
+      line-height: 40PX;
+      color: var(--text-black-900);
+}
+
+.about .about-content .education,
+.about .about-content .experience {
+      flex: 0 0 50%;
+      max-width: 50%;
+      margin-top: 30px;
+}
+
+.about .about-content h3.title {
+      font-size: 24px;
+      margin-bottom: 30px;
+      font-weight: 700;
+      color: var(--text-black-900);
+}
+
+.about .about-content .timeline-box {
+      flex: 0 0 100%;
+      max-width: 100%;
+}
+
+.about .about-content .timeline {
+      background: var(--bg-black-100);
+      padding: 30px 15px;
+      border: 1px solid var(--bg-black-50);
+      width: 100%;
+      position: relative;
+}
+
+.about .about-content .timeline .timeline-item {
+      position: relative;
+      padding-left: 37px;
+      padding-bottom: 50px;
+}
+
+.about .about-content .timeline .timeline-item:last-child {
+      padding-bottom: 0;
+}
+
+.about .about-content .timeline .timeline-item::before {
+      content: '';
+      width: 1px;
+      position: absolute;
+      height: 100%;
+      top: 0;
+      left: 7px;
+      background: var(--skin-color);
+}
+
+.about .about-content .timeline .circle-dot {
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 15px;
+      width: 15px;
+      border-radius: 50%;
+      background: var(--skin-color);
+}
+
+.about .about-content .timeline .timeline-date {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 18px;
+      color: var(--text-black-700);
+}
+
+.about .about-content .timeline .timeline-date .fa {
+      margin-right: 5px;
+}
+
+.about .about-content .timeline .timeline-title {
+      font-weight: 400;
+      font-size: 14px;
+      margin-bottom: 15px;
+      text-transform: capitalize;
+      color: var(--text-black-900);
+}
+
+.about .about-content .timeline p {
+      line-height: 25px;
+      font-size: 16px;
+      text-align: justify;
+      font-weight: 500;
+      color: var(--text-black-700);
+}
+.timeine-call{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 50px;
+}
+.timeine-call .timeline-phone{
+      line-height: 30px;
+}
+.timeine-call .timeline-phone i{
+ font-size: 30px;
+ color: var(--text-black-700);
+ transform: scale(1.2);
+}
+.timeine-call .timeline-phone a{
+  background: var(--skin-color);
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px 0px 10px 0px;
+}
+
+/* service */
+.service .container {
+      padding-bottom: 40px;
+}
+
+.service .service-item {
+      margin-bottom: 30px;
+      flex: 0 0 33.33%;
+}
+
+.service .service-item .service-item-inner {
+      background: var(--bg-black-100);
+      border: 1px solid var(--bg-black-50);
+      border-radius: 10px;
+      padding: 30px 15px;
+      text-align: center;
+      transition: all 0.3s ease;
+}
+
+.service .service-item .service-item-inner:hover {
+      box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+}
+
+.service .service-item .service-item-inner .icon {
+      height: 60px;
+      width: 60px;
+      border-radius: 50%;
+      display: block;
+      margin: 0 auto 30px;
+      text-align: center;
+      transition: all 0.3s;
+
+}
+
+.service .service-item .service-item-inner .icon .fa {
+      font-size: 40px;
+      line-height: 60px;
+      color: var(--skin-color);
+      transition: all 0.3s ease;
+}
+.service .service-item .service-item-inner .icon .fa-solid  {
+      font-size: 40px;
+      line-height: 60px;
+      color: var(--skin-color);
+      transition: all 0.3s ease;
+}
+.service .service-item .service-item-inner .icon .fa-brands  {
+      font-size: 40px;
+      line-height: 60px;
+      color: var(--skin-color);
+      transition: all 0.3s ease;
+}
+
+.service .service-item .service-item-inner:hover .icon {
+      background: var(--skin-color);
+}
+
+.service .service-item .service-item-inner:hover .icon .fa {
+      font-size: 25px;
+      color: #ffffff;
+}
+.service .service-item .service-item-inner:hover .icon .fa-solid  {
+      font-size: 25px;
+      color: #ffffff;
+}
+.service .service-item .service-item-inner:hover .icon .fa-brands{
+      font-size: 25px;
+      color: #ffffff;
+}
+
+.service .service-item .service-item-inner h4 {
+      font-size: 18px;
+      margin-bottom: 15px;
+      color: var(--text-black-900);
+      font-weight: 900;
+      text-transform: capitalize;
+}
+
+.service .service-item .service-item-inner p {
+      font-size: 16px;
+      line-height: 25px;
+      font-weight: 600;
+      color: var(--text-black-700);
+}
+.service .service-item .service-item-inner p a{
+      color: var(--text-black-700);
+}
+
+/* portolio */
+.portfolio .container {
+      padding-bottom: 40px;
+}
+
+.portfolio .portfolio-heading {
+      flex: 0 0 100%;
+      max-width: 100%;
+      margin-bottom: 40px;
+}
+
+.portfolio .portfolio-heading h2 {
+      color: var(--text-black-900);
+      font-weight: 500;
+}
+
+.portfolio .portfolio-item {
+      flex: 0 0 33.33%;
+      max-width: 33.33%;
+      margin-bottom: 30px;
+}
+
+.portfolio .portfolio-item-inner {
+      border: 6px solid var(--bg-black-100);
+      border-radius: 10px;
+      overflow: hidden;
+      cursor: pointer;
+}
+
+.portfolio .portfolio-item-inner .portfolio-img img {
+      height: 100%;
+      width: 100%;
+      display: block;
+}
+
+/* contact */
+.contact-title {
+      color: var(--skin-color);
+      text-align: center;
+      font-size: 25px;
+      margin-bottom: 20px;
+}
+
+.contact-sub-title {
+      color: var(--text-black-900);
+      text-align: center;
+      font-size: 25px;
+      margin-bottom: 20px;
+}
+
+.contact-sub-title {
+      color: var(--text-black-900);
+      text-align: center;
+      font-size: 15px;
+      margin-bottom: 60px;
+}
+
+.contact .contact-info-item {
+      flex: 0 0 25%;
+      max-width: 25%;
+      text-align: center;
+      margin-bottom: 60px;
+}
+
+.contact .contact-info-item .icon {
+      display: inline-block;
+}
+
+.contact .contact-info-item .icon .fa {
+      font-size: 25px;
+      color: var(--skin-color);
+}
+
+.contact .contact-info-item h4 {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--text-black-900);
+      text-transform: capitalize;
+      margin: 15px 0 5px;
+}
+
+.contact .contact-info-item p {
+      font-size: 12px;
+      line-height: 25px;
+      color: var(--text-black-700);
+      font-weight: 900;
+}
+
+.contact .contact-form {
+      flex: 0 0 100%;
+      max-width: 100%;
+}
+
+.contact .contact-form .col-6 {
+      flex: 0 0 50%;
+      max-width: 50%;
+}
+
+.contact .contact-form .col-12 {
+      flex: 0 0 100%;
+      max-width: 100%;
+}
+
+.contact .contact-form .form-item {
+      margin-bottom: 30px;
+}
+
+.contact .contact-form .form-item .form-control {
+      width: 100%;
+      height: 50px;
+      border-radius: 25px;
+      background: var(--bg-black-100);
+      border: 1px solid var(--bg-black-50);
+      padding: 10px 25px;
+      font-size: 16px;
+      color: var(--text-black-700);
+      transition: all 0.3s ease;
+}
+
+.contact .contact-form .form-item .form-control:focus {
+      box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+}
+
+.contact .contact-form .form-item textarea.form-control {
+      height: 140px;
+}
+
+.contact .contact-form .btn {
+      height: 50px;
+      padding: 0 50px;
+}
+
+@media (max-width:1199px) {
+      .aside {
+            left: -270px;
+      }
+
+      .main-content {
+            padding-left: 0;
+      }
+
+      .about .about-content .personal-info .info-item p span {
+            display: block;
+            margin-left: 0;
+      }
+}
+
+@media (max-width:991px) {
+
+      .contact .contact-info-item,
+      .portfolio .portfolio-item,
+      .service .service-item {
+            flex: 0 0 50%;
+            max-width: 50%;
+      }
+
+      .home .home-info {
+            flex: 0 0 100%;
+            max-width: 100%;
+      }
+
+      .home .home-image {
+            display: none;
+      }
+      .aside .nav-toggler {
+            height: 40px;
+            width: 45px;
+            border: 1px solid var(--bg-black-50);
+            cursor: pointer;
+            position: fixed;
+            left: 450px;
+            top: 20px;
+            border-radius: 5px;
+            background: var(--bg-black-100);
+            display: block;
+            align-items: center;
+            justify-content: center;
+      }
+      
+.aside .nav-toggler span {
+      height: 2px;
+      width: 20px;
+      position: relative;
+      background: var(--skin-color);
+}
+
+.aside .nav-toggler span::after {
+      height: 2px;
+      top: -6px;
+      content: '';
+      left: 0;
+      width: 20px;
+      position: absolute;
+      background: var(--skin-color);
+}
+
+.aside .nav-toggler span::before {
+      height: 2px;
+      top: 6px;
+      content: '';
+      left: 0;
+      width: 20px;
+      position: absolute;
+      background: var(--skin-color);
+}
+}
+
+@media (max-width:767px) {
+      body{
+            overflow-x: hidden;
+      }
+
+      @keyframes navLink {
+            from{
+                  transform: translateX(100px);
+                  opacity: 0;
+            }
+            to{
+                  transform: translateX(0px);
+                  opacity: 0;
+            }
+      }
+     
+      .main-container .nav-toggler {
+            height: 40px;
+            width: 40px;
+            border: 1px solid var(--bg-black-50);
+            cursor: pointer;
+            position: fixed;
+            transform: translateX(100%);
+            top: 10px;
+            padding: 5px;
+            z-index: 10;
+            border-radius: 5px;
+            background: var(--bg-black-100);
+            display: block;
+            align-items: center;
+            justify-content: center;
+      }
+      .main-container .nav-toggler div{
+            transition: all .3s ease;
+            height: 2px;
+            width: 25px;
+            background: var(--skin-color);
+            margin: 5px;
+            text-align: center;
+      }
+      .toggle .line1{
+            transform: rotate(45deg) translate(-5px, 12px);
+      }
+      .toggle .line2{
+            opacity: 0;
+      }
+      .toggle .line3{
+            transform: rotate(-45deg) translate(-5px, -12px);
+      }
+      
+.about .about-content .personal-info .info-item p {
+      font-weight: 600;
+      padding: 10px 0;
+      font-size: 12px;
+      color: var(--text-black-900);
+      border-bottom: 1px solid var(--bg-black-50);
+}
+
+.about .about-content .personal-info .info-item p span {
+      color: var(--text-black-700);
+      font-weight: 400;
+      margin-left: 4px;
+      display: inline-block;
+}
+      .aside{
+            height: 90vh;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            background: var(--bg-black-100);
+            left: 0;
+            top: 50px;
+            margin-left: 0px;
+            align-items: center;
+            transform: translateX(100%);
+      }
+      .aside .logo {
+            height: 100px;
+            width: 100px;
+            position: absolute;
+            transform: translateX(-180PX);
+            top: 10px;
+      }
+      
+      .aside .logo img {
+            font-size: 30px;
+            padding: 15px 20px;
+            position: relative;
+            height: 100px;
+            width: 100px;
+      }
+      
+      .nav-active{
+            transform: translate(0%);
+      }
+      .aside .nav{
+            margin-top: 150px;
+      }
+     
+
+
+
+
+
+
+      .contact .contact-form .col-6,
+      .contact .contact-info-item,
+      .portfolio .portfolio-item,
+      .service .service-item,
+      .about .about-content .experience,
+      .about .about-content .education,
+      .about .about-content .skills,
+      .about .about-content .personal-info {
+            flex: 0 0 100%;
+            max-width: 100%;
+      }
+}
+@media (max-width:401px) {
+      .aside .logo {
+            height: 100px;
+            width: 100px;
+            position: absolute;
+            transform: translateX(-140PX);
+            top: 10px;
+      }
+      
+      .aside .logo img {
+            font-size: 30px;
+            padding: 15px 20px;
+            border-radius: 10px;
+            position: relative;
+            height: 100px;
+            width: 100px;
+      }
+      
+      .aside .logo p {
+            transform: translate(2px, -110px);
+            font-size: 30px;
+            padding: 15px 20px;
+            position: relative;
+            height: 100px;
+            width: 100px;
+      }
+      
+      .aside .logo p::before {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            border-bottom: 5px solid var(--skin-color);
+            border-left: 5px solid var(--skin-color);
+            bottom: 0;
+            left: 0;
+      }
+      
+      .aside .logo p::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            border-top: 5px solid var(--skin-color);
+            border-right: 5px solid var(--skin-color);
+            top: 0;
+            right: 0;
+      }
+      .ny-profession {
+            font-size: 23px;
+      }
+      
+      .typing {
+            font-size: 23px;
+            color: var(--skin-color);
+      }
+      
+      .home-info p {
+            
+            font-size: 18px;
+          
+      }
+      .about .about-content .about-text h3 {
+            font-size: 18px;
+         
+      }
+      
+      .about .about-content .about-text h3 span {
+            font-size: 18px;
+        
+      }
+      
+      .about .about-content .about-text p {
+            font-weight: 500;
+            font-size: 14px;
+          
+      
+      }
+      .about .about-content .personal-info {
+            display: block;
+            max-width: 60%;
+            margin-top: 40px;
+      }
+      
+      .about .about-content .personal-info .info-item {
+            flex: 0 0 100%;
+            align-items: center;
+            justify-content: center;
+            max-width: 100%;
+      }
+      .about .about-content .personal-info .buttons {
+            margin-top: 25px;
+      }
+      
+      .about .about-content .personal-info .buttons .btn {
+            margin-right: 15px;
+            margin-top: 10px;
+      }
+      .service .service-item .service-item-inner p {
+            font-size: 15px;
+            line-height: 25px;
+            font-weight: 400;
+            color: var(--text-black-700);
+      }
+      
+
+}
+      </style>
+      <link rel="stylesheet" href="/css/all.css">
+      <link rel="stylesheet" href="/css/all.min.css">
+      <link rel="stylesheet" href="/font.css">
+      <!-- ==== style switch ==== -->
+      <link rel="stylesheet" href="/style/skins/color-1.css" class="alternate-style" title="color-1">
+      <link rel="stylesheet" href="/style/skins/color-2.css" class="alternate-style" title="color-2" disabled>
+      <link rel="stylesheet" href="/style/skins/color-3.css" class="alternate-style" title="color-3" disabled>
+      <link rel="stylesheet" href="/style/skins/color-4.css" class="alternate-style" title="color-4" disabled>
+      <link rel="stylesheet" href="/style/skins/color-5.css" class="alternate-style" title="color-5" disabled>
+      <link rel="stylesheet" href="/style/style-switcher.css">
+</head>
+
+<body>
+      <div class="main-container">
+            <!-- ==== aside start ==== -->
+            <!-- ==== nav toggler container start ====-->
+            <div class="nav-toggler-container">
+            <!-- ==== nav toggle start ==== -->
+            <div class="nav-toggler">
+                  <div class="line1"></div>
+                  <div class="line2"></div>
+                  <div class="line3"></div>
+            </div>
+            <!-- ==== nav toggle end ==== -->
+      </div>
+      <!-- ==== nav toggler container end ====-->
+            <div class="aside">
+                  <!-- ==== aside logo start ====-->
+                  <div class="logo">
+                        <img src="/images/MY LOGO.png" alt="logo">
+                        <p></p>
+                  </div>
+                  <!-- ==== aside logo end ====-->
+
+                  <!-- ==== aside list start ====-->
+                  <ul class="nav">
+                        <li><a class="active" href="#home"><i class="fa fa-home"></i>Home</a></li>
+                        <li><a href="#about"><i class="fa fa-user"></i>About</a></li>
+                        <li><a href="#services"><i class="fa fa-list"></i>Services</a></li>
+                        <li><a href="#portfolio"><i class="fa fa-briefcase"></i>Portfolio</a></li>
+                        <li><a href="#contact"><i class="fa fa-comments"></i>Contact</a></li>
+                  </ul>
+                  <!-- ==== aside list end ====-->
+                  <!-- ==== aside icons start ==== -->
+                  <div class="aside-icons-social">
+                        <ul class="social">
+                              <li>
+                                    <a href="https://twitter.com/richardandy864/"><i class="fa-brands fa-twitter"></i></a>
+                                    <a href="https://www.instagram.com/Governmentsydcodes76/"><i class="fa-brands fa-instagram"></i></a>
+                                    <a href="https://wa.me/+2330240578624/"><i class="fa-brands fa-whatsapp"></i></a>
+                                    <a href="https://web.facebook.com/governmentsydcodes"><i class="fa-brands fa-facebook"></i></a>
+                                    <a href="https://t.me/Governmentsydcodes76"><i class="fa-brands fa-telegram"></i></a>
+                                    <a href="https://www.youtube.com/channel/UCIqznD2cmYSdAHwf_xOZhxw"><i class="fa-brands fa-youtube"></i></a>
+                              </li>
+                        </ul>
+                  </div>
+                  <!-- ==== aside icons end ==== -->
+            </div>
+            <!-- ==== aside end ==== -->
+            <!-- ==== main content start ==== -->
+            <div class="main-content">
+                  <!-- ==== home section start ==== -->
+                  <section class="home section" id="home">
+                        <!-- ==== section container start ==== -->
+                        <div class="container">
+                              <!-- === row start ==== -->
+                              <div class="row">
+                                    <!-- === home information start-->
+                                    <div class="home-info padd-15">
+                                          <h3 class="hello">Hello, welcome to <span class="name">Government Syd
+                                                      Codes</span></h3>
+                                          <h3 class="ny-profession">I' m a <span class="typing">web designer</span></h3>
+                                          <p>I'm a software developer with expensive exprience for over 10 years. My
+                                                dream is 
+                                                to create and design web application, website,graphic design and many more...</p>
+                                          <a href="#contact" class="btn hire-me">Hire Me</a>
+                                    </div>
+                                    <!-- === home information end-->
+                                    <!-- ==== home image start ==== -->
+                                    <div class="home-image padd-15">
+                                          <img src="/images/pro.png" alt="">
+                                    </div>
+                                    <!-- ==== home image end ==== -->
+                              </div>
+                              <!-- === row end ==== -->
+                        </div>
+                        <!-- ==== section container end ==== -->
+                  </section>
+                  <!-- ==== home section end ==== -->
+                  <!-- ==== about section start ==== -->
+                  <section class="about section" id="about">
+                        <!-- ==== about section container start ==== -->
+                        <div class="container">
+                              <!-- ==== about row start ==== -->
+                              <div class="row">
+                                    <!-- ==== about section title start ====-->
+                                    <div class="section-title padd-15">
+                                          <h2>About Me</h2>
+                                    </div>
+                                    <!-- ==== about section title end ====-->
+                              </div>
+                              <!-- ==== about row start ==== -->
+                              <div class="row">
+                                    <!-- ==== about content start ==== -->
+                                    <div class="about-content padd-15">
+                                          <!-- ==== about row start ==== -->
+                                          <div class="row">
+                                                <!-- ==== about text start ====-->
+                                                <div class="about-text padd-15">
+                                                      <h3>Government Syd Codes Is A <span>Web Developing Site</span>
+                                                      </h3>
+                                                      <p> Government Syd Codes is a private company form in 2015 with
+                                                            the aim of helping
+                                                            people to have access to internet. Government Syd Codes
+                                                            Recognise as a good
+                                                            company for web design, graphics design, video editing,
+                                                            SEO Marketing and many more.
+                                                            Government Syd Codes has 3 Branches in Ghana.Locate our main
+                                                            office in Tamale at <b>Bulpiela</b> opposite Guma Naa
+                                                            junction
+                                                            <b>+233 (0) 24 057 8624 </b>Greater Accra <b>+233 (0) 24 298
+                                                                  9667</b> Brong Ahafo <b>+233 (0) 59 533 6377</b>
+
+                                                      </p>
+                                                </div>
+                                                <!-- ==== about text end ====-->
+                                          </div>
+                                          <!-- ==== about row end ==== -->
+                                          <!-- ==== about row start ==== -->
+                                          <div class="row">
+                                                <!-- ==== about personal info start ====-->
+                                                <div class="personal-info padd-15">
+                                                      <!-- ==== about row start ==== -->
+                                                      <div class="row">
+                                                            <!-- ==== about info item start ==== -->
+                                                            <div class="info-item padd-15">
+                                                                  <p>CEO : <span> Adam Rafiu</span></p>
+                                                            </div>
+                                                            <!-- ==== about info item end ==== -->
+                                                            <!-- ==== about info item start ==== -->
+                                                            <div class="info-item padd-15">
+                                                                  <p>Age : <span>22</span></p>
+                                                            </div>
+                                                            <!-- ==== about info item end ==== -->
+                                                            <!-- ==== about info item start ==== -->
+                                                            <div class="info-item padd-15">
+                                                                  <p>Website : <span> www.governmentsydcodes.com</span>
+                                                                  </p>
+                                                            </div>
+                                                            <!-- ==== about info item end ==== -->
+                                                            <!-- ==== about info item start ==== -->
+                                                            <div class="info-item padd-15">
+                                                                  <p>Email : <span> governmentsydcodes@gmail.com</span></p>
+                                                            </div>
+                                                            <!-- ==== about info item end ==== -->
+                                                            <!-- ==== about info item start ==== -->
+                                                            <div class="info-item padd-15">
+                                                                  <p>Workers : <span> 7</span></p>
+                                                            </div>
+                                                            <!-- ==== about info item end ==== -->
+                                                            <!-- ==== about info item start ==== -->
+                                                            <div class="info-item padd-15">
+                                                                  <p>Phone : <span> +233 (0) 24 057 8624</span></p>
+                                                            </div>
+                                                            <!-- ==== about info item end ==== -->
+                                                            <!-- ==== about info item start ==== -->
+                                                            <div class="info-item padd-15">
+                                                                  <p>City : <span> Tamale</span></p>
+                                                            </div>
+                                                            <!-- ==== about info item end ==== -->
+                                                            <!-- ==== about info item start ==== -->
+                                                            <div class="info-item padd-15">
+                                                                  <p>Freelance : <span> Available</span></p>
+                                                            </div>
+                                                            <!-- ==== about info item end ==== -->
+                                                      </div>
+                                                      <!-- ==== about row end ==== -->
+                                                      <!-- ==== about row start ==== -->
+                                                      <div class="row">
+                                                            <!-- ==== about hire me start ==== -->
+                                                            <div class="buttons padd-15">
+                                                                  <a  class="btn hire-me"
+                                                      href="https://www.youtube.com/channel/UCIqznD2cmYSdAHwf_xOZhxw">Watch Videos.</a>
+                                                                  <a href="#contact" class="btn hire-me">Hire Me</a>
+                                                            </div>
+                                                            <!-- ==== about hire me end ==== -->
+                                                      </div>
+                                                      <!-- ==== about row end ==== -->
+                                                </div>
+                                                <!-- ==== about personal info end ====-->
+                                                <!-- ==== about skills strart ==== -->
+                                                <div class="skills padd-15">
+                                                      <!-- ==== skills row start ==== -->
+                                                      <div class="row">
+                                                            <!-- ==== skills item start ====-->
+                                                            <div class="skill-item padd-15">
+                                                                  <h5>HTML</h5>
+                                                                  <!-- ==== skills progress start ==== -->
+                                                                  <div class="progress">
+                                                                        <!-- ==== skills progress in start ====-->
+                                                                        <div class="progress-in" style="width:92%;">
+                                                                        </div>
+                                                                        <!-- ==== skills progress in end ====-->
+                                                                        <!-- ==== skills percent start ====-->
+                                                                        <div class="skill-percent">92%</div>
+                                                                        <!-- ==== skills percent end ====-->
+                                                                  </div>
+                                                                  <!-- ==== skills progress end ==== -->
+                                                            </div>
+                                                            <!-- ==== skills item end ====-->
+                                                            <!-- ==== skills item start ====-->
+                                                            <div class="skill-item padd-15">
+                                                                  <h5>CSS</h5>
+                                                                  <!-- ==== skills progress start ==== -->
+                                                                  <div class="progress">
+                                                                        <!-- ==== skills progress in start ====-->
+                                                                        <div class="progress-in" style="width:90%;">
+                                                                        </div>
+                                                                        <!-- ==== skills progress in end ====-->
+                                                                        <!-- ==== skills percent start ====-->
+                                                                        <div class="skill-percent">90%</div>
+                                                                        <!-- ==== skills percent end ====-->
+                                                                  </div>
+                                                                  <!-- ==== skills progress end ==== -->
+                                                            </div>
+                                                            <!-- ==== skills item end ====-->
+                                                            <!-- ==== skills item start ====-->
+                                                            <div class="skill-item padd-15">
+                                                                  <h5>JS</h5>
+                                                                  <!-- ==== skills progress start ==== -->
+                                                                  <div class="progress">
+                                                                        <!-- ==== skills progress in start ====-->
+                                                                        <div class="progress-in" style="width:88%;">
+                                                                        </div>
+                                                                        <!-- ==== skills progress in end ====-->
+                                                                        <!-- ==== skills percent start ====-->
+                                                                        <div class="skill-percent">88%</div>
+                                                                        <!-- ==== skills percent end ====-->
+                                                                  </div>
+                                                                  <!-- ==== skills progress end ==== -->
+                                                            </div>
+                                                            <!-- ==== skills item end ====-->
+                                                            <!-- ==== skills item start ====-->
+                                                            <div class="skill-item padd-15">
+                                                                  <h5>PYTHON</h5>
+                                                                  <!-- ==== skills progress start ==== -->
+                                                                  <div class="progress">
+                                                                        <!-- ==== skills progress in start ====-->
+                                                                        <div class="progress-in" style="width:79%;">
+                                                                        </div>
+                                                                        <!-- ==== skills progress in end ====-->
+                                                                        <!-- ==== skills percent start ====-->
+                                                                        <div class="skill-percent">79%</div>
+                                                                        <!-- ==== skills percent end ====-->
+                                                                  </div>
+                                                                  <!-- ==== skills progress end ==== -->
+                                                            </div>
+                                                            <!-- ==== skills item end ====-->
+                                                      </div>
+                                                      <!-- ==== skills row end ==== -->
+                                                </div>
+                                                <!-- ==== about skills end ==== -->
+                                          </div>
+                                          <!-- ==== about row end ==== -->
+                                          <!-- ==== about skill row start ==== -->
+                                          <div class="row">
+                                                <!-- ==== about education start ====-->
+                                                <div class="education padd-15">
+                                                      <h3 class="title">Our Branches</h3>
+                                                      <!-- ==== about skills row start ==== -->
+                                                      <div class="row">
+                                                            <!-- ==== time line box start ====-->
+                                                            <div class="timeline-box padd-15">
+                                                                  <!-- ===== timeline start ===== -->
+                                                                  <div class="timeline shadow-dark">
+                                                                        <!-- ==== timeline item start ==== -->
+                                                                        <div class="timeline-item">
+                                                                              <!-- ==== timeline ciorcle dot start ====-->
+                                                                              <div class="circle-dot"></div>
+                                                                              <!-- ==== timeline ciorcle dot end ====-->
+                                                                              <h3 class="timeline-date">
+                                                                                    <i class="fa fa-map-marker-alt"></i>Tamale Branch`
+                                                                              </h3>
+                                                                              <h4 class="timeline-title">Head Office, Bulpiela, -Northern Region</h4>
+                                                                              <p class="timeline-text"></p>
+                                                                              <div class="timeine-call">
+                                                                                    <div class="timeline-phone">
+                                                                                          <i class="fa fa-flag"></i>
+                                                                              </div>
+                                                                              </div>
+                                                                              <div class="timeine-call">
+                                                                                    <div class="timeline-phone">
+                                                                                    <a href="tel:+233 24 057 8624">Call the Branch</a>
+                                                                              </div>
+                                                                              </div>
+                                                                        </div>
+                                                                        <!-- ==== timeline item end ==== -->
+                                                                        <!-- ==== timeline item start ==== -->
+                                                                        <div class="timeline-item">
+                                                                              <!-- ==== timeline ciorcle dot start ====-->
+                                                                              <div class="circle-dot"></div>
+                                                                              <!-- ==== timeline ciorcle dot end ====-->
+                                                                              <h3 class="timeline-date">
+                                                                                    <i class="fa fa-map-marker-alt"></i>Accra Branch
+                                                                              </h3>
+                                                                              <h4 class="timeline-title">Jomah, Chief Block Factory, -Greater Accra Region</h4>
+                                                                              <p class="timeline-text"></p>
+                                                                              <div class="timeine-call">
+                                                                                    <div class="timeline-phone">
+                                                                                          <i class="fa fa-flag"></i>
+                                                                              </div>
+                                                                              </div>
+                                                                              <div class="timeine-call">
+                                                                                    <div class="timeline-phone">
+                                                                                    <a href="tel:+233 24 ">Call the Branch</a>
+                                                                              </div>
+                                                                              </div>
+                                                                        </div>
+                                                                        <!-- ==== timeline item end ==== -->
+                                                                        <!-- ==== timeline item start ==== -->
+                                                                        <div class="timeline-item">
+                                                                              <!-- ==== timeline ciorcle dot start ====-->
+                                                                              <div class="circle-dot"></div>
+                                                                              <!-- ==== timeline ciorcle dot end ====-->
+                                                                              <h3 class="timeline-date">
+                                                                                    <i class="fa fa-map-marker-alt"></i>Kintampo Branch
+                                                                              </h3>
+                                                                              <h4 class="timeline-title">MTN office, -Brong Ahafo Region</h4>
+                                                                              <p class="timeline-text"></p>
+                                                                              <div class="timeine-call">
+                                                                                    <div class="timeline-phone">
+                                                                                          <i class="fa fa-flag"></i>
+                                                                              </div>
+                                                                              </div>
+                                                                              <div class="timeine-call">
+                                                                                    <div class="timeline-phone">
+                                                                                    <a href="tel:+233 59 533 6377">Call the Branch</a>
+                                                                              </div>
+                                                                              </div>
+                                                                        </div>
+                                                                        <!-- ==== timeline item end ==== -->
+                                                                  </div>
+                                                                  <!-- ===== timeline end ===== -->
+                                                            </div>
+                                                            <!-- ==== time line box end ====-->
+                                                      </div>
+                                                      <!-- ==== about skills row end ==== -->
+                                                </div>
+                                                <!-- ==== about education end ====-->
+                                                <!-- ==== about education start ====-->
+                                                <div class="experience padd-15">
+                                                      <h3 class="title">Our History</h3>
+                                                      <!-- ==== about skills row start ==== -->
+                                                      <div class="row">
+                                                            <!-- ==== time line box start ====-->
+                                                            <div class="timeline-box padd-15">
+                                                                  <!-- ===== timeline start ===== -->
+                                                                  <div class="timeline shadow-dark">
+                                                                        <!-- ==== timeline item start ==== -->
+                                                                        <div class="timeline-item">
+                                                                              <!-- ==== timeline ciorcle dot start ====-->
+                                                                              <div class="circle-dot"></div>
+                                                                              <!-- ==== timeline ciorcle dot end ====-->
+                                                                              <h3 class="timeline-date">
+                                                                                    <i class="fa fa-calendar"></i>2012 -
+                                                                                    2015
+                                                                              </h3>
+                                                                             
+                                                                              <p class="timeline-text">Government Syd Cods launches a standard indepent business
+                                                                                    and served clients as a freelance.The Comapny served enjoyed the service provided to
+                                                                                    them and stay with us througout the year as the business continue to grow from power to 
+                                                                                    power
+                                                                              </p>
+                                                                        </div>
+                                                                        <!-- ==== timeline item end ==== -->
+                                                                        <!-- ==== timeline item start ==== -->
+                                                                        <div class="timeline-item">
+                                                                              <!-- ==== timeline ciorcle dot start ====-->
+                                                                              <div class="circle-dot"></div>
+                                                                              <!-- ==== timeline ciorcle dot end ====-->
+                                                                              <h3 class="timeline-date">
+                                                                                    <i class="fa fa-calendar"></i>2015 -
+                                                                                    2019
+                                                                              </h3>
+                                                                              <p class="timeline-text">Government Syd Codes began to create a network
+                                                                                    with other companies. This helped to boost our service, increase income
+                                                                                    and exposed us to many other potential customers who were really thirsty for our service
+                                                                              </p>
+                                                                        </div>
+                                                                        <!-- ==== timeline item end ==== -->
+                                                                        <!-- ==== timeline item start ==== -->
+                                                                        <div class="timeline-item">
+                                                                              <!-- ==== timeline ciorcle dot start ====-->
+                                                                              <div class="circle-dot"></div>
+                                                                              <!-- ==== timeline ciorcle dot end ====-->
+                                                                              <h3 class="timeline-date">
+                                                                                    <i class="fa fa-calendar"></i>2019 -
+                                                                                    2022
+                                                                              </h3>
+                                                                              <p class="timeline-text">On The 20th of December the company had an award
+                                                                                    from Cenba Africa Business execellence Awards which took place at the Kumasi
+                                                                                    Golden Tulip. The company won <b>Best Customer Care Award</b> This achievement encouraged the team to continue to do better things in other
+                                                                                    to achieve better result.
+                                                                              </p>
+                                                                        </div>
+                                                                        <!-- ==== timeline item end ==== -->
+                                                                  </div>
+                                                                  <!-- ===== timeline end ===== -->
+                                                            </div>
+                                                            <!-- ==== time line box end ====-->
+                                                      </div>
+                                                      <!-- ==== about skills row end ==== -->
+                                                </div>
+                                                <!-- ==== about education end ====-->
+                                          </div>
+                                          <!-- ==== about skill row end ==== -->
+                                    </div>
+                                    <!-- ==== about content end ==== -->
+                              </div>
+                              <!-- ==== about row end ==== -->
+                              <!-- ==== about row end ==== -->
+                        </div>
+                        <!-- ==== about section container end ==== -->
+                  </section>
+                  <!-- ==== about section end ==== -->
+                  <!-- ==== service section start ==== -->
+                  <section class="service section" id="services">
+                        <!-- ==== service container start ==== -->
+                        <div class="container">
+                              <!-- ==== service row start ==== -->
+                              <div class="row">
+                                    <!-- ==== service section title start ==== -->
+                                    <div class="section-title padd-15">
+                                          <h2>Services</h2>
+                                    </div>
+                                    <!-- ==== service section title end ==== -->
+                              </div>
+                              <!-- ==== service row end ==== -->
+                              <!-- ==== service row start ==== -->
+                              <div class="row">
+                                    <!-- ==== serice item start ==== -->
+                                    <div class="service-item padd-15">
+                                          <!-- ==== serice item inner start ==== -->
+                                          <div class="service-item-inner">
+                                                <!-- ==== service icons start ==== -->
+                                                <div class="icon">
+                                                      <i class="fa fa-code"></i>
+                                                </div>
+                                                <!-- ==== service icons end ==== -->
+                                                <h4>Web Design</h4>
+                                                <p>We design all kind of website with a grate experience within a short 
+                                                      period of time.</p>
+                                          </div>
+                                          <!-- ==== service item inner end ==== -->
+                                    </div>
+                                    <!-- ==== serice item end ==== -->
+                                    <!-- ==== serice item start ==== -->
+                                    <div class="service-item padd-15">
+                                          <!-- ==== serice item inner start ==== -->
+                                          <div class="service-item-inner">
+                                                <!-- ==== service cons start ==== -->
+                                                <div class="icon">
+                                                      <i class="fa-solid fa-pen-to-square"></i>
+                                                </div>
+                                                <!-- ==== service cons end ==== -->
+                                                <h4>Graphic Design</h4>
+                                                <p>We do all kind of graphic design in a short peroid of time with advance tools and editors</p>
+                                          </div>
+                                          <!-- ==== serice item inner end ==== -->
+                                    </div>
+                                    <!-- ==== serice item end ==== -->
+                                    <!-- ==== serice item start ==== -->
+                                    <div class="service-item padd-15">
+                                          <!-- ==== serice item inner start ==== -->
+                                          <div class="service-item-inner">
+                                                <!-- ==== service cons start ==== -->
+                                                <div class="icon">
+                                                      <i class="fa fa-laptop-code"></i>
+                                                </div>
+                                                <!-- ==== service cons end ==== -->
+                                                <h4>Web Developmment</h4>
+                                                <p>We solve all the technical issue and provide good security for your website.</p>
+                                          </div>
+                                          <!-- ==== service item inner end ==== -->
+                                    </div>
+                                    <!-- ==== serice item inner start ==== -->
+                                    <!-- ==== serice item start ==== -->
+                                    <div class="service-item padd-15">
+                                          <!-- ==== serice item inner start ==== -->
+                                          <div class="service-item-inner">
+                                                <!-- ==== service cons start ==== -->
+                                                <div class="icon">
+                                                      <i class="fa-solid fa-video"></i>
+                                                </div>
+                                                <!-- ==== service cons end ==== -->
+                                                <h4>Video Edit</h4>
+                                                <p>We create video content for advertisement 
+                                                      at low rate .</p>
+                                          </div>
+                                          <!-- ==== serice item inner end ==== -->
+                                    </div>
+                                    <!-- ==== serice item end ==== -->
+                                    <!-- ==== serice item start ==== -->
+                                    <div class="service-item padd-15">
+                                          <!-- ==== serice item inner start ==== -->
+                                          <div class="service-item-inner">
+                                                <!-- ==== service cons start ==== -->
+                                                <div class="icon">
+                                                      <i class="fa-brands fa-youtube"></i>
+                                                </div>
+                                                <!-- ==== service cons end ==== -->
+                                                <h4>Youtuber</h4>
+                                                <p>You can learn with us by watching our <a
+                                                      href="https://www.youtube.com/channel/UCIqznD2cmYSdAHwf_xOZhxw">youtube channel videos.</a></p>
+                                          </div>
+                                          <!-- ==== serice item inner end ==== -->
+                                    </div>
+                                    <!-- ==== serice item end ==== -->
+                                    <!-- ==== serice item start ==== -->
+                                    <div class="service-item padd-15">
+                                          <!-- ==== serice item inner start ==== -->
+                                          <div class="service-item-inner">
+                                                <!-- ==== service cons start ==== -->
+                                                <div class="icon">
+                                                      <i class="fa fa-bullhorn"></i>
+                                                </div>
+                                                <!-- ==== service cons end ==== -->
+                                                <h4>SEO Marketing</h4>
+                                                <p>Rank your website on top and grow your audience with us.</p>
+                                          </div>
+                                          <!-- ==== serice item inner end ==== -->
+                                    </div>
+                                    <!-- ==== serice item end ==== -->
+                              </div>
+                              <!-- ==== service row end ==== -->
+                        </div>
+                        <!-- ==== service container end ==== -->
+                  </section>
+                  <!-- ==== service section end ==== -->
+                  <!-- ==== portfolio section start ==== -->
+                  <section class="portfolio section" id="portfolio">
+                        <!-- ==== portfolio container start ====-->
+                        <div class="container">
+                              <!-- ==== service row start ==== -->
+                              <div class="row">
+                                    <!-- ==== service section title start ==== -->
+                                    <div class="section-title padd-15">
+                                          <h2>Portfolio</h2>
+                                    </div>
+                                    <!-- ==== service section title end ==== -->
+                              </div>
+                              <!-- ==== service row end ==== -->
+                              <!-- ==== portfolio row start ====-->
+                              <div class="row">
+                                    <!-- ==== portfolio heading start ==== -->
+                                    <div class="portfolio-heading padd-15">
+                                          <h2>My Last Projects :</h2>
+                                    </div>
+                                    <!-- ==== portfolio heading end ==== -->
+                              </div>
+                              <!-- ==== portfolio row end ====-->
+                              <!-- ==== portfolio row start ==== -->
+                              <div class="row">
+                                    <!-- ==== porfolio item start ==== -->
+                                    <div class="portfolio-item padd-15">
+                                          <!-- ==== portfolio item inner start ==== -->
+                                          <div class="portfolio-item-inner shadow-dark">
+                                                <!-- ==== portfolio images start ==== -->
+                                                <div class="portfolio-img">
+                                                      <img src="/images/portfolio/portfolio1.jpg" alt="">
+                                                </div>
+                                                <!-- ==== portfolio images end ==== -->
+                                          </div>
+                                          <!-- ==== portfolio item inner end ==== -->
+                                    </div>
+                                    <!-- ==== porfolio item end ==== -->
+                                    <!-- ==== porfolio item start ==== -->
+                                    <div class="portfolio-item padd-15">
+                                          <!-- ==== portfolio item inner start ==== -->
+                                          <div class="portfolio-item-inner shadow-dark">
+                                                <!-- ==== portfolio images start ==== -->
+                                                <div class="portfolio-img">
+                                                      <img src="/images/portfolio/portfolio2.jpg" alt="">
+                                                </div>
+                                                <!-- ==== portfolio images end ==== -->
+                                          </div>
+                                          <!-- ==== portfolio item inner end ==== -->
+                                    </div>
+                                    <!-- ==== porfolio item end ==== -->
+                                    <!-- ==== porfolio item start ==== -->
+                                    <div class="portfolio-item padd-15">
+                                          <!-- ==== portfolio item inner start ==== -->
+                                          <div class="portfolio-item-inner shadow-dark">
+                                                <!-- ==== portfolio images start ==== -->
+                                                <div class="portfolio-img">
+                                                      <img src="/images/portfolio/portfolio3.jpg" alt="">
+                                                </div>
+                                                <!-- ==== portfolio images end ==== -->
+                                          </div>
+                                          <!-- ==== portfolio item inner end ==== -->
+                                    </div>
+                                    <!-- ==== porfolio item end ==== -->
+                                    <!-- ==== porfolio item start ==== -->
+                                    <div class="portfolio-item padd-15">
+                                          <!-- ==== portfolio item inner start ==== -->
+                                          <div class="portfolio-item-inner shadow-dark">
+                                                <!-- ==== portfolio images start ==== -->
+                                                <div class="portfolio-img">
+                                                      <img src="/images/portfolio/portfolio3.jpeg" alt="">
+                                                </div>
+                                                <!-- ==== portfolio images end ==== -->
+                                          </div>
+                                          <!-- ==== portfolio item inner end ==== -->
+                                    </div>
+                                    <!-- ==== porfolio item end ==== -->
+                                    <!-- ==== porfolio item start ==== -->
+                                    <div class="portfolio-item padd-15">
+                                          <!-- ==== portfolio item inner start ==== -->
+                                          <div class="portfolio-item-inner shadow-dark">
+                                                <!-- ==== portfolio images start ==== -->
+                                                <div class="portfolio-img">
+                                                      <img src="/images/portfolio/portfolio5.jpg" alt="">
+                                                </div>
+                                                <!-- ==== portfolio images end ==== -->
+                                          </div>
+                                          <!-- ==== portfolio item inner end ==== -->
+                                    </div>
+                                    <!-- ==== porfolio item end ==== -->
+                                    <!-- ==== porfolio item start ==== -->
+                                    <div class="portfolio-item padd-15">
+                                          <!-- ==== portfolio item inner start ==== -->
+                                          <div class="portfolio-item-inner shadow-dark">
+                                                <!-- ==== portfolio images start ==== -->
+                                                <div class="portfolio-img">
+                                                      <img src="/images/portfolio/portfolio 6.jpg" alt="">
+                                                </div>
+                                                <!-- ==== portfolio images end ==== -->
+                                          </div>
+                                          <!-- ==== portfolio item inner end ==== -->
+                                    </div>
+                                    <!-- ==== porfolio item end ==== -->
+                              </div>
+                              <!-- ==== portfolio row end ==== -->
+                        </div>
+                        <!-- ==== portfolio container end ====-->
+                  </section>
+                  <!-- ==== portfolio section end ==== -->
+                  <!-- ==== contact section start ==== -->
+                  <section class="contact section" id="contact">
+                        <!-- ==== contact container start ==== -->
+                        <div class="container">
+                              <!-- ==== service row start ==== -->
+                              <div class="row">
+                                    <!-- ==== service section title start ==== -->
+                                    <div class="section-title padd-15">
+                                          <h2>Contact Me</h2>
+                                    </div>
+                                    <!-- ==== service section title end ==== -->
+                              </div>
+                              <!-- ==== service row end ==== -->
+                              <h3 class="contact-title padd-15">Have You Any Question</h3>
+                              <h4 class="contact-sub-title padd-15">I'M AT YOUR SERVICE</h4>
+                              <!-- ==== contact row start ==== -->
+                              <div class="row">
+                                    <!-- ==== contact info item start ====-->
+                                    <div class="contact-info-item padd-15">
+                                          <!-- ==== contact icon start ===== -->
+                                          <div class="icon"><i class="fa fa-phone"></i></div>
+                                          <!-- ==== contact icon end ===== -->
+                                          <h4>Call Us On</h4>
+                                          <p>+233 (0) 24 057 8624</p>
+                                    </div>
+                                    <!-- ==== contact info item end ====-->
+                                    <!-- ==== contact info item start ====-->
+                                    <div class="contact-info-item padd-15">
+                                          <!-- ==== contact icon start ===== -->
+                                          <div class="icon"><i class="fa fa-map-marker-alt"></i></div>
+                                          <!-- ==== contact icon end ===== -->
+                                          <h4>Office</h4>
+                                          <p>Tamale</p>
+                                    </div>
+                                    <!-- ==== contact info item end ====-->
+                                    <!-- ==== contact info item start ====-->
+                                    <div class="contact-info-item padd-15">
+                                          <!-- ==== contact icon start ===== -->
+                                          <div class="icon"><i class="fa fa-envelope"></i></div>
+                                          <!-- ==== contact icon end ===== -->
+                                          <h4>Email</h4>
+                                          <p>governmentsydcodes@gmail.com</p>
+                                    </div>
+                                    <!-- ==== contact info item end ====-->
+                                    <!-- ==== contact info item start ====-->
+                                    <div class="contact-info-item padd-15">
+                                          <!-- ==== contact icon start ===== -->
+                                          <div class="icon"><i class="fa fa-globe-europe"></i></div>
+                                          <!-- ==== contact icon end ===== -->
+                                          <h4>Website</h4>
+                                          <p>www.governmentsydcodes.com</p>
+                                    </div>
+                                    <!-- ==== contact info item end ====-->
+                              </div>
+                              <!-- ==== contact row end ==== -->
+                              <h3 class="contact-title padd-15">Send Me An Email</h3>
+                              <h4 class="contact-sub-title padd-15">I'M VERY RESPONSIVE TO MESSAGE</h4>
+                              <!-- ==== contact form ====-->
+                              <!-- ==== contact row start ==== -->
+                              <div class="row">
+                                    <!--contact form start ==== -->
+                                    <div class="contact-form padd-15">
+                                          <!-- ==== contact row start ==== -->
+                                          <div class="row">
+                                                <!-- ==== contact form item start ====-->
+                                                <div class="form-item col-6 padd-15">
+                                                      <!-- ==== contact form group start ====-->
+                                                      <div class="form-group">
+                                                            <input type="text" class="form-control" placeholder="name">
+                                                      </div>
+                                                      <!-- ==== contact form group end ====-->
+                                                </div>
+                                                <!-- ==== contact form item end ====-->
+                                                <!-- ==== contact form item start ====-->
+                                                <div class="form-item col-6 padd-15">
+                                                      <!-- ==== contact form group start ====-->
+                                                      <div class="form-group">
+                                                            <input type="email" class="form-control"
+                                                                  placeholder="Email">
+                                                      </div>
+                                                      <!-- ==== contact form group end ====-->
+                                                </div>
+                                                <!-- ==== contact form item end ====-->
+                                          </div>
+                                          <!-- ==== contact row end ==== -->
+                                          <!-- ==== contact row start ==== -->
+                                          <div class="row">
+                                                <!-- ==== contact form item start ====-->
+                                                <div class="form-item col-12 padd-15">
+                                                      <!-- ==== contact form group start ====-->
+                                                      <div class="form-group">
+                                                            <input type="email" class="form-control"
+                                                                  placeholder="subject">
+                                                      </div>
+                                                      <!-- ==== contact form group end ====-->
+                                                </div>
+                                                <!-- ==== contact form item end ====-->
+                                          </div>
+                                          <!-- ==== contact row end ==== -->
+                                          <!-- ==== contact row start ==== -->
+                                          <div class="row">
+                                                <!-- ==== contact form item start ====-->
+                                                <div class="form-item col-12 padd-15">
+                                                      <!-- ==== contact form group start ====-->
+                                                      <div class="form-group">
+                                                            <textarea name="" id="" class="form-control"
+                                                                  placeholder="Message"></textarea>
+                                                      </div>
+                                                      <!-- ==== contact form group end ====-->
+                                                </div>
+                                                <!-- ==== contact form item end ====-->
+                                          </div>
+                                          <!-- ==== contact row end ==== -->
+                                          <!-- ==== contact row start ==== -->
+                                          <div class="row">
+                                                <!-- ==== contact form item start ====-->
+                                                <div class="form-item col-12 padd-15">
+                                                      <button type="submit" class="btn">Send Message</button>
+                                                </div>
+                                                <!-- ==== contact form item end ====-->
+                                          </div>
+                                          <!-- ==== contact row end ==== -->
+                                    </div>
+                                    <!--contact form end ==== -->
+                              </div>
+                              <!-- ==== contact row end ==== -->
+                        </div>
+                        <!-- ==== contact container end ==== -->
+                  </section>
+                  <!-- ==== contact section end ==== -->
+            </div>
+            <!-- ==== main content end ==== -->
+      </div>
+      <!-- ==== style switcher start ==== -->
+      <div class="style-switcher">
+            <!-- ==== stle toggle start ==== -->
+            <div class="style-toggle s-icon">
+                  <i class="fas fa-cog fa-spin"></i>
+            </div>
+            <!-- ==== stle toggle end ==== -->
+            <!-- ==== dat - night icons start ==== -->
+            <div class="day-night s-icon">
+                  <i class="fas "></i>
+            </div>
+            <!-- ==== dat - night icons end ==== -->
+            <h4>Theme Colors</h4>
+            <!-- ==== colors start ==== -->
+            <div class="colors">
+                  <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+                  <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+                  <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+                  <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+                  <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+            </div>
+            <!-- ==== colors end ==== -->
+      </div>
+      <!-- ==== style switcher end ==== -->
+      <!--==== main container end ====-->
+      <script src="/js/scrit.js"></script>
+      <script src="/js/style-switcher.js"></script>
+</body>
+
+</html>
